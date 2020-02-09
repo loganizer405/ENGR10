@@ -11,14 +11,12 @@ s1 = (-r / (2 * l)) + sqrt((r / (2 * l))^2 - (1 / (l * c)));
 s2 = (-r / (2 * l)) - sqrt((r / (2 * l))^2 - (1 / (l * c)));
 %print
 if(~isreal(s1)) %if imaginary, print real and imaginary part
-    fprintf('S = %3.3f + %3.3fi\nOR\n', real(s1), imag(s1));
-end
-if(isreal(s1)) % if real, print num
-    fprintf('S = %3.3f\nOR\n', s1);
+    fprintf('S = %3.4f + %3.4fi\nOR\n', real(s1), imag(s1));
+else % if real, print num
+    fprintf('S = %3.4f\nOR\n', s1);
 end
 if(~isreal(s2)) %if imaginary, print real and imaginary part
-    fprintf('S = %3.3f + %3.3fi\n', real(s2), imag(s2));
-end
-if(isreal(s2)) % if real, print num
-    fprintf('S = %3.3f\n', s2);
+    fprintf('S = %3.4f + %3.4fi\n', real(s2), imag(s2));
+else % if real, print num
+    fprintf('S = %3.4f\n', s2);
 end
