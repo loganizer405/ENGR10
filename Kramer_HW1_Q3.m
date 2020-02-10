@@ -2,10 +2,10 @@
 % Date: 2/3/20
 clc;
 clear all;
-%declare varibles
+%declare varibles, converted into SI
 r = 400;
-c = 1;
-l = 100;
+c = 0.001;
+l = 0.1;
 %calculate s1 and s2
 s1 = (-r / (2 * l)) + sqrt((r / (2 * l))^2 - (1 / (l * c)));
 s2 = (-r / (2 * l)) - sqrt((r / (2 * l))^2 - (1 / (l * c)));
