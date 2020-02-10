@@ -1,0 +1,12 @@
+% Name: Logan Kramer
+% Date: 2/10/20
+clc;
+clear all;
+% declare constants
+l = 1809;
+w = 1026;
+for i = 1 : 1 : l
+    if(rem(l, i) == 0 && rem(w, i) == 0)
+        fprintf('%d x %d    %d x % d', i, i, l / i, w / i);
+        en
+end

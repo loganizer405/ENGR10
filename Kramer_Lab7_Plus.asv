@@ -1,0 +1,26 @@
+% Name: Logan Kramer
+% Date: 2/10/20
+clc;
+clear all;
+% get input
+a = input('Enter a: ');
+b = input('Enter b: ');
+if(a >= b) %a must be less than b, otherwise exit program
+    fprintf('Error: a must be less than b\n');
+    return;
+end
+% count odds
+for i = a : 1 : b
+    if(rem(i, 2) == 1)
+        countOdd = countOdd + 1;
+    end
+end
+% count evens
+% count multiples of 3
+countThree = 0;
+for i = a : 1 : b
+    if(rem(i, 3) == 0)
+        countThree = countThree + 1;
+    end
+end
+fprintf('Multiples of three: %d', countThree);
