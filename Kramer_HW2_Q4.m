@@ -19,4 +19,5 @@ else %above 100k
     % company: 0
     contribution = (60000 * 0.1) + (40000 * 0.08);
 end
+%print total
 fprintf('Total contribution: $%.2f\n', contribution);
