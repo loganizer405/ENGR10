@@ -19,7 +19,9 @@ for i = 1 : 3
 end
 %print arrays
 fprintf('%i ', addedArray);
+fprintf('\n'); % for spacing
 fprintf('%i ', subtractedArray);
+fprintf('\n'); % for spacing
 % transpose and echo
 transpose(addedArray)
 transpose(subtractedArray)

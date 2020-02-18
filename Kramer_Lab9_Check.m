@@ -8,3 +8,4 @@ for i = 1 : 5
 end
 %print multiplied by 2
 fprintf('%i ', array * 2);
+fprintf('\n'); % for spacing
