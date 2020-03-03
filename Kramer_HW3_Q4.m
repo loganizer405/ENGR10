@@ -1,0 +1,13 @@
+% Name: Logan Kramer
+% Date: 3/2/20
+clc;
+clear all;
+% declare variables
+increase  = [9 8 9 15 14 3 5 6 7 9 7 11 13 14 7 6 5 4 6 7 8 7];
+tuition = 7800;
+for i = 1 : 1 : 22
+    % increase tuition by percentage at increase(i)
+    tuition = tuition * (1 + (increase(i) / 100));
+end
+% print
+fprintf('Tuition at year 22: $%.2f\n', tuition);

@@ -1,0 +1,11 @@
+% Name: Logan Kramer
+% Date: 3/2/20
+clc;
+clear all;
+% declare variables
+i = 1;
+while i <= 10
+    list(i) = 1 / i;
+    i = i + 1;
+end
+% print 
